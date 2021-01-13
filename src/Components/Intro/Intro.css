@@ -1,0 +1,12 @@
+#fishLips {
+  width: 50%;
+}
+img {
+  height: auto;
+  margin: auto;
+  border-radius: 10px;
+}
+.img {
+  display: flex;
+  padding: 10px 0px;
+}

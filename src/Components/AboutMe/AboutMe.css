@@ -1,0 +1,48 @@
+.section-container {
+  margin: auto;
+  width:90%;
+  height:100%;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #262626;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #121212;
+}
+h3 {
+  width: 75%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+h1, h2, h3, h4, .heading {
+  color: rgba(255,255,255, 80%);
+}
+.back {
+  position: relative;
+  top: -20px;
+  right: 20px;
+}
+button {
+  font-size: 16px;
+  z-index: 5;
+  align-self: flex-end;
+  background-color: #748CAB;
+  border: none;
+  padding: 20px 12px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #121212;
+}
+.back>a {
+  text-decoration: none;
+  padding: 10px 0;
+  content: 15px;
+}
