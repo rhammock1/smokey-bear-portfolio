@@ -7,6 +7,14 @@ main {
   background-color: #1C1C1C;
   border-radius: 10px;
   margin:auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+}
+.animate-on-change {
+  height:auto;
+  width: auto;
 }
 .indent {
   text-indent: 20px;

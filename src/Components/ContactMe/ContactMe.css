@@ -3,6 +3,9 @@
   flex-direction: column;
 
 }
+/* .absolute {
+  position: absolute;
+} */
 #submit {
   position: relative;
   bottom: -25px;
@@ -10,9 +13,9 @@
 form {
   display: flex;
   flex-direction: column;
-
 }
 #contact {
+  padding: 10px 0;
   text-align:center;
 }
 .orderedList {

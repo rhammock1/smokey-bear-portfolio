@@ -14,7 +14,7 @@ const Project = function(props) {
     pathname,
     } = props;
   return (
-    <div className="detail-container project-container">
+    <div id='project-slider' className="detail-container project-container">
       <img src={img} alt={alt} className="projectImg" />
       {(pathname === '/projects')
         ? <h3><a className='heading' rel='noreferrer' target='_blank' href={host}>{title}</a></h3>
