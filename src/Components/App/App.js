@@ -7,6 +7,7 @@ import Header from '../Header/Header';
 import DinnerSS from './images/Dinner_SS_Wheel.png';
 import RecipeProject from './images/recipe-project-ss.png';
 import BookmarkProject from './images/bookmark-project-ss.png';
+import SBCMain from './images/mainPageSS.png';
 import Context from '../../Context';
 import Projects from '../../Routes/Projects';
 import Contact from '../../Routes/Contact';
@@ -45,6 +46,16 @@ class App extends React.Component {
       stack: 'JavaScript, React, Node.js, Express, PostgreSQL',
       img: DinnerSS,
       alt: 'What\'s For Dinner app home page screen shot',
+    },
+    {
+      title: `Sports Biz Cares Fundraising Raffle`,
+      host: 'https://sbc-fundraising-campaign.vercel.app',
+      clientRepo: 'https://github.com/rhammock1/sbc-random-raffler',
+      serverRepo: 'https://github.com/rhammock1/sbc-raffle-server',
+      description: 'Sports Biz Cares is 501(c)(3) non-profit, whose mission is to create career opportunities for individuals that are passionate about sports and currently underrepresented in the sports business. This is a simple PERN app that enables Sports Biz Cares to upload a csv file and spin a wheel to randomly choose a winner for their raffles. The winner is randomly chosen based on the number of entries each person has according to the csv file. ',
+      stack: 'JavaScript, React, Node.js, Express, PostgreSQL',
+      img: SBCMain,
+      alt: 'SBC fundraising raffle app home page screen shot',
     },
     ]
   }

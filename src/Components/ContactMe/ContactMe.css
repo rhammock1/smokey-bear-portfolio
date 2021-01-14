@@ -19,6 +19,11 @@ form {
   width: fit-content;
 
 }
+input, textarea {
+  background-color: #121212;
+  border: none;
+  padding: 5px;
+}
 ol {
   width: 50%;
   margin: auto;
