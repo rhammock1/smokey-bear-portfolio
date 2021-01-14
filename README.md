@@ -1,6 +1,6 @@
 # React version of my Portfolio
 
-rhammock1.github.io
+https://rhammock-portfolio.vercel.app/
 
 
 ## Future update ideas:
