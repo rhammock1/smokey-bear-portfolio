@@ -26,9 +26,8 @@
 .button-container {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  width: 90%;
-  margin:auto;
+  position: absolute;
+  width: 100%;
 }
 .slider {
   position: relative;
