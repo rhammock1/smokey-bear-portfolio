@@ -39,7 +39,7 @@ class App extends React.Component {
     },
     {
       title: `What's For Dinner`,
-      host: 'https://whats-for-dinner-client.vercel.app/',
+      host: 'https://dinnerbear.com/',
       clientRepo: 'https://github.com/rhammock1/whats-for-dinner-client',
       serverRepo: 'https://github.com/rhammock1/whats-for-dinner-server',
       description: 'App to help users decide what to do for dinner with the help of a fun spinning wheel. Users can filter by restaurants or recipes. Users can signup/login and save their own restaurants and recipes and can even mark favorites.',
