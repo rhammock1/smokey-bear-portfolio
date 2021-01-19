@@ -14,3 +14,18 @@ img {
   display: flex;
   padding: 10px 0px;
 }
+.temp {
+  width: max-content;
+  margin: auto;
+  /* -webkit-animation: slideInFromRight 1s ease-in 0s 1;
+  animation: slideInFromRight 1s ease-in 0s 1; */
+}
+.temperature {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+}
+.emphasize {
+  color: #C6D8FF;
+}
+/* 69DC9E */

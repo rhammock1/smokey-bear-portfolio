@@ -16,8 +16,13 @@ header {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
+  
+}
+#nav-ul>li>a {
+  color: #FE7F2D;
 }
 .span-p {
+  
   display: inline-block;
   position: relative;
   -webkit-animation: fadeIn 1.5s ease-in 0s 1;
@@ -26,16 +31,6 @@ header {
 }
 .span-p>p {
   margin: 0;
-}
-.temp {
-  width: max-content;
-  margin: auto;
-  /* -webkit-animation: slideInFromRight 1s ease-in 0s 1;
-  animation: slideInFromRight 1s ease-in 0s 1; */
-}
-.temperature {
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 @keyframes fadeIn {

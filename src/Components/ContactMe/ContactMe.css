@@ -9,6 +9,7 @@
 #submit {
   position: relative;
   bottom: -25px;
+  background-color: #C6D8FF;
 }
 form {
   display: flex;
@@ -30,4 +31,7 @@ input, textarea {
 ol {
   width: 50%;
   margin: auto;
+  list-style: none;
+  display: flex;
+  padding: 0;
 }

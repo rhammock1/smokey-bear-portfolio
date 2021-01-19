@@ -25,7 +25,8 @@ h3 {
   padding-bottom: 10px;
 }
 h1, h2, h3, h4, .heading {
-  color: rgba(255,255,255, 80%);
+  /* color: rgba(255,255,255, 80%); */
+  color: #FE7F2D;
 }
 .back {
   position: relative;
@@ -36,7 +37,7 @@ button {
   font-size: 16px;
   z-index: 5;
   align-self: flex-end;
-  background-color: #748CAB;
+  background-color: #C6D8FF;
   border: none;
   padding: 20px 12px;
   border-radius: 50%;

@@ -22,7 +22,7 @@ class Intro extends React.Component {
           I live in Charlotte, North Carolina.</p>
           <div className='temp'>
                 {/* TODO: add on hover event to show popup about how I get the temperature data */}
-                <p className='temperature'>It is currently {temp}&#176;F outside my home.</p>
+                <p className='temperature'>It is currently <span className='emphasize'>{temp}&#176;F</span> outside my home.</p>
               </div>
           <p className='indent'>As a Developer I am interested in:</p>
           <div className="list">
