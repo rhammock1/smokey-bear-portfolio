@@ -65,3 +65,24 @@ main {
     background-color: #FE9D5D;
   }
 }
+@media all and (min-width: 900px) {
+  .opening {
+    flex-direction: row;
+    width: 75%;
+    margin:auto;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  h1 {
+    padding-right: 25px;
+  }
+  .list {
+    position: absolute;
+    top: -150px;
+    right: -15px;
+    height: max-content;
+  }
+  .list>ol {
+    flex-direction: column;
+  }
+}

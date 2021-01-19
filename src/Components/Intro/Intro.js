@@ -25,7 +25,7 @@ class Intro extends React.Component {
                 <p className='temperature'>It is currently <span className='emphasize'>{temp}&#176;F</span> outside my home.</p>
               </div>
           <p className='indent'>As a Developer I am interested in:</p>
-          <div className="list">
+          <div className="interest-list">
             <ul>
               <li>Microcontrollers and IoT</li>
               <li>Making things work</li>
