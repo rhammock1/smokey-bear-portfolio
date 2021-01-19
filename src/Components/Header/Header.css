@@ -20,6 +20,7 @@ header {
 .span-p {
   display: inline-block;
   position: relative;
+  -webkit-animation: slideInFromLeft 1s ease-in 0s 1;
   animation: slideInFromLeft 1s ease-in 0s 1;
   /* color: rgba(255,255,255, 75%); */
 }
@@ -29,6 +30,7 @@ header {
 .temp {
   width: max-content;
   margin: auto;
+  -webkit-animation: slideInFromRight 1s ease-in 0s 1;
   animation: slideInFromRight 1s ease-in 0s 1;
 }
 .temperature {
@@ -38,9 +40,22 @@ header {
 
 @keyframes slideInFromLeft {
   0% {
+    opacity: 25%;
     transform: translateX(-300%);
   }
   100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 25%;
+    transform: translateX(300%);
+  }
+  100% {
+    opacity: 100%;
     transform: translateX(0);
   }
 }

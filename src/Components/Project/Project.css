@@ -37,14 +37,3 @@
 .animate-on-change {
   height: 75%;
 }
-
-@keyframes slideInFromRight {
-  0% {
-    opacity: 25%;
-    transform: translateX(300%);
-  }
-  100% {
-    opacity: 100%;
-    transform: translateX(0);
-  }
-}
