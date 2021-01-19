@@ -8,7 +8,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  box-shadow: 3px 5px 2px 2px #121212;
+  box-shadow: 1px 3px 2px #121212;
 }
 .img {
   display: flex;
