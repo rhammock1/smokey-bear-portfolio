@@ -57,12 +57,29 @@ class App extends React.Component {
       img: SBCMain,
       alt: 'SBC fundraising raffle app home page screen shot',
     },
-    ]
+    ],
+    temperature: 0,
+    error: null,
+  }
+
+  componentDidMount() {
+    const URL = 'https://guarded-journey-06260.herokuapp.com/temperature';
+    fetch(URL)
+      .then((res) => {
+        return res.json();
+      })
+      .then((resJson) => {
+        this.setState({ temperature: resJson.temperature });
+      })
+      .catch((error) => {
+        this.setState({ error });
+      })
   }
 
   render() {
     const value = {
       projects: this.state.projects,
+      temp: this.state.temperature,
     }
     return (
       <Context.Provider value={value} >

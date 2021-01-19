@@ -6,8 +6,13 @@ header {
 }
 .opening {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 #nav-ul {
+  padding-left: 0;
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
@@ -16,6 +21,19 @@ header {
   display: inline-block;
   position: relative;
   animation: slideInFromLeft 1s ease-in 0s 1;
+  /* color: rgba(255,255,255, 75%); */
+}
+.span-p>p {
+  margin: 0;
+}
+.temp {
+  width: max-content;
+  margin: auto;
+  animation: slideInFromRight 1s ease-in 0s 1;
+}
+.temperature {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 @keyframes slideInFromLeft {
