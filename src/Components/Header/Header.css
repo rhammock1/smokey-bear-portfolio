@@ -20,8 +20,8 @@ header {
 .span-p {
   display: inline-block;
   position: relative;
-  -webkit-animation: slideInFromLeft 1s ease-in 0s 1;
-  animation: slideInFromLeft 1s ease-in 0s 1;
+  -webkit-animation: fadeIn 1.5s ease-in 0s 1;
+  animation: fadeIn 1.5s ease-in 0s 1;
   /* color: rgba(255,255,255, 75%); */
 }
 .span-p>p {
@@ -30,22 +30,22 @@ header {
 .temp {
   width: max-content;
   margin: auto;
-  -webkit-animation: slideInFromRight 1s ease-in 0s 1;
-  animation: slideInFromRight 1s ease-in 0s 1;
+  /* -webkit-animation: slideInFromRight 1s ease-in 0s 1;
+  animation: slideInFromRight 1s ease-in 0s 1; */
 }
 .temperature {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-@keyframes slideInFromLeft {
+@keyframes fadeIn {
   0% {
-    opacity: 25%;
-    transform: translateX(-300%);
+    opacity: 0%;
+    /* transform: translateX(-300%); */
   }
   100% {
     opacity: 100%;
-    transform: translateX(0);
+    /* transform: translateX(0); */
   }
 }
 
