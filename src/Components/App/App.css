@@ -53,11 +53,6 @@ main {
   h1,h2,h3,h4,.heading, a {
     color: #215682;
   }
-  .list>ol {
-    background-color: rgba(198,216,255, 0.3);;
-    border-radius: 10px;
-    /* box-shadow: 1px 3px 2px #524D56; */
-  }
   .icon {
     background-color: #efefef;
   }
