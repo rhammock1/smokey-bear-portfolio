@@ -17,6 +17,7 @@
   background-color: #262626;
   border-radius: 10px;
   box-shadow: 1px 3px 3px 2px #121212;
+  position:relative;
 }
 h3 {
   width: 75%;

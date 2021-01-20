@@ -6,11 +6,24 @@ import Context from '../../Context';
 
 class Intro extends React.Component {
 
+  state = {
+    clicked: false,
+  }
+
   static contextType = Context;
+
+  handleClick = () => {
+    const { clicked } = this.state;
+    this.setState({ clicked: !clicked });
+    // setTimeout(() => {
+    //   this.setState({ clicked: false });
+    // }, 10000);
+  }
 
   render() {
     const hello = greeting();
     const { temp } = this.context;
+    const { clicked } = this.state;
     return (
       <div className="section-container">
         <div className='img'>
@@ -22,7 +35,12 @@ class Intro extends React.Component {
           I live in Charlotte, North Carolina.</p>
           <div className='temp'>
                 {/* TODO: add on hover event to show popup about how I get the temperature data */}
-                <p className='temperature'>It is currently <span className='emphasize'>{temp}&#176;F</span> outside my home.</p>
+                {(!clicked) 
+                  ? null 
+                  : <div className="popup">
+                      <p className="popuptext">This data is being gathered by an ESP8266 with a DHT11 temperature sensor. The 8266 is making a POST request with the data to my home server every 10 seconds</p>
+                    </div>}
+                <p className='temperature'>It is currently <span className='emphasize temp-click' onClick={this.handleClick}>{temp}&#176;F</span> outside my home.</p>
               </div>
           <p className='indent'>As a Developer I am interested in:</p>
           <div className="interest-list">
