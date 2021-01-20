@@ -7,11 +7,11 @@ import Projects from './Projects';
 const Home = function(props) {
   const { path } = props.match;
   return (
-    <>
-      <div className='container'><Intro /></div>
-      <div className='container'><AboutMe /></div>
-      <div className='container'><Projects pathname={path} /></div>
-      <div className='container'><ContactMe /></div>
+    <>      
+      <Intro />
+      <AboutMe />
+      <Projects pathname={path} />
+      <ContactMe />
     </>
   )
 }
