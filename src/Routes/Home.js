@@ -8,10 +8,10 @@ const Home = function(props) {
   const { path } = props.match;
   return (
     <>
-      <Intro />
-      <AboutMe />
-      <Projects pathname={path} />
-      <ContactMe />
+      <div className='container'><Intro /></div>
+      <div className='container'><AboutMe /></div>
+      <div className='container'><Projects pathname={path} /></div>
+      <div className='container'><ContactMe /></div>
     </>
   )
 }

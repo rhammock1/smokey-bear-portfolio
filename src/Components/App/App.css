@@ -12,6 +12,10 @@ main {
   position: relative;
   
 }
+.container {
+  width: auto;
+  height: 100%;
+}
 .animate-on-change {
   height:auto;
   width: auto;
