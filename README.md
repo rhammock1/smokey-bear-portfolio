@@ -1,12 +1,20 @@
 # React version of my Portfolio
 
-https://rhammock-portfolio.vercel.app/
+https://smokeybear.dev
+
+Dark theme is default, but css media query has been added to check for light theme preference.
+If you click on the home temperature reading a popup will appear explaining how that data is gotten.
+
 
 
 ## Future update ideas:
 
-Dark and Light Theme
+Github API to dynamically get pinned projects from github and add them to the projects section slideshow of my portfolio
 
-Github API
+Start to record daily temperature data and display the data on a graph with D3
+
+Add other sensors around my home and incorporate more arduino/raspberry pi projects
+
+Add a blog tab to explain the process through working on each of my new projects
 
 ### Other ideas when they come to me
