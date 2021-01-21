@@ -27,6 +27,7 @@ h3 {
 h1, h2, h3, h4, .heading {
   /* color: rgba(255,255,255, 80%); */
   color: #FE7F2D;
+  font-family: 'Oswald', sans-serif;
 }
 .back {
   position: relative;
@@ -50,4 +51,9 @@ button {
   text-decoration: none;
   padding: 10px 0;
   content: 15px;
+}
+@media all and (min-width: 600px) {
+  .detail-container {
+    padding: 10px 30px;
+  }
 }

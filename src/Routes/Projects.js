@@ -49,12 +49,14 @@ class Projects extends React.Component {
           ? <h3>Projects</h3>
           : <h2>Projects</h2>
         }
-          <AnimateOnChange>
+          <AnimateOnChange animationIn="bounceIn" animationOut="bounceOut">
             {<Project pathname={pathname} key={index} img={project.img} title={project.title} alt={project.alt} host={project.host} clientRepo={project.clientRepo} serverRepo={project.serverRepo} description={project.description} stack={project.stack} />}
           </AnimateOnChange>
-          <div className='button-container'>
-            <button className='slider' onClick={this.slideLeft}>{'<'}</button>
-            <button className='slider' onClick={this.slideRight}>{'>'}</button> 
+          <div className='another-container'>
+            <div className='button-container'>
+              <button className='slider' onClick={this.slideLeft}>{'<'}</button>
+              <button className='slider' onClick={this.slideRight}>{'>'}</button> 
+            </div>
           </div>
         </div>
       </div>

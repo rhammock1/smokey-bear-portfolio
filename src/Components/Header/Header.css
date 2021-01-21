@@ -4,6 +4,7 @@ header {
   padding-bottom: 10px;
   box-shadow: 1px 2px 5px #121212;
 }
+
 .opening {
   text-align: center;
   display: flex;
@@ -25,8 +26,8 @@ header {
   
   display: inline-block;
   position: relative;
-  -webkit-animation: fadeIn 1.5s ease-in 0s 1;
-  animation: fadeIn 1.5s ease-in 0s 1;
+  /* -webkit-animation: fadeIn 1.5s ease-in 0s 1;
+  animation: fadeIn 1.5s ease-in 0s 1; */
   /* color: rgba(255,255,255, 75%); */
 }
 .span-p>p {
@@ -52,5 +53,25 @@ header {
   100% {
     opacity: 100%;
     transform: translateX(0);
+  }
+}
+@media all and (min-width: 500px) {
+  h1 {
+    font-size: 45px;
+  }
+  body {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+  .span-p {
+    font-size: 20px;
   }
 }

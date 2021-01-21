@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { AnimateOnChange } from 'react-animation';
 import './Header.css';
 
 const Header = function() {
@@ -8,7 +9,7 @@ const Header = function() {
       <header id="home">
         <div className = "opening">
             <h1>Robert Hammock</h1>
-            <span className='span-p' ><p>Full Stack Developer</p></span>
+            <span className='span-p' ><AnimateOnChange><p>Full Stack Developer</p></AnimateOnChange></span>
         </div>
         <nav>
             <ul id = "nav-ul">
