@@ -23,7 +23,7 @@ const AboutMe = function(props) {
           We had to code an HTML scrape with Python to pull the data we needed and then wire the display to a Raspberry Pi to show the data. 
           We have also recently started working on a type of blockchain program to track whole animals as they go from the rancher to a processor, to us.
         </p>
-        <p className='indent'>I am proficient in <span className='emphasize'>Node.js, React, Express, and PostrgreSQL</span>. I can offer smart solutions to any problem.</p>
+        <p className='indent'>I am proficient in <span className='emphasize'>Node.js, React, Express, and PostrgreSQL</span>. I am always eager to learn more.</p>
       </div>
       {(pathname === '/about')
         ? <button className="back" type="button"><Link to='/'>Back</Link></button>

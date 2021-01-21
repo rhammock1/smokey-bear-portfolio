@@ -6,24 +6,11 @@ import Context from '../../Context';
 
 class Intro extends React.Component {
 
-  state = {
-    clicked: false,
-  }
-
   static contextType = Context;
-
-  handleClick = () => {
-    const { clicked } = this.state;
-    this.setState({ clicked: !clicked });
-    // setTimeout(() => {
-    //   this.setState({ clicked: false });
-    // }, 10000);
-  }
 
   render() {
     const hello = greeting();
     const { temp } = this.context;
-    const { clicked } = this.state;
     return (
       <div className="section-container">
         <div className='img'>
@@ -34,23 +21,25 @@ class Intro extends React.Component {
           <p className='indent'>I am a Full Stack Developer, currently working for a small local food hub, called Freshlist. I have a background in Restaurants and Food Service.
           I live in Charlotte, North Carolina.</p>
           <div className='temp'>
-                {/* TODO: add on hover event to show popup about how I get the temperature data */}
-                {(!clicked) 
-                  ? null 
-                  : <div className="popup">
-                      <p className="popuptext">This data is being gathered by an ESP8266 with a DHT11 temperature sensor. The 8266 is making a POST request with the data to my home server every 10 seconds</p>
-                    </div>}
                 <p className='temperature'>It is currently <span className='emphasize temp-click' onClick={this.handleClick}>{temp}&#176;F</span> outside my home.</p>
+                <div className="popup">
+                  {/* TODO 
+                  begin recording data 
+                  add graph data in with D3 
+                  compare one day to the next */}
+                  <p className="temperature">This data is being gathered by an ESP8266 with a DHT11 temperature sensor. The 8266 is making a POST request with the data to my home server every 10 seconds</p>
+                </div>
               </div>
-          <p className='indent'>As a Developer I am interested in:</p>
+          
           <div className="interest-list">
+            <p className='indent'>As a developer I am interested in:</p>
             <ul>
               <li>Microcontrollers and IoT</li>
               <li>Making things work</li>
               <li>Learning everything I can</li>
             </ul>
           </div> 
-            <p className='indent'>My goal is to use software engineering to progress my career and create better opportunities for my future.</p>
+            <p className='indent'>My goals are to use software to create positive change in my community, to never stop learning, and to always keep building</p>
         </div>  
       </div>
       )

@@ -15,42 +15,32 @@ img {
   padding: 10px 0px;
 }
 .popup {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 10px;
+  width: auto;
+}
+.interest-list {
+  width:80%;
+  text-align: left;
+  margin: auto;
+}
+.interest-list>ul {
+  padding: 0;
+  /* margin: auto; */
+  width:fit-content;
+  list-style-position: inside;
+}
+ul>li {
+  text-align: left;
+}
+
+.temp {
+  width: 66%;
+  margin: auto;
   background-color: #333333;
   border-radius: 10px;
-  box-shadow: 1px 3px 3px 2px #121212;
-  position: absolute;
-  z-index:5;
-  top: 9%;
-  left: -5%;
-}
-.popuptext {
-  display:block;
-  width:fit-content;
-  margin: 0;
-}
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 56%;
-  margin-left: -5px;
-  z-index:5;
-  border-width:10px;
-  border-style: solid;
-  border-color: #333 transparent transparent transparent;
-}
-.temp {
-  width: 100%;
-  margin: auto;
+  box-shadow: 1px 3px 2px #121212;
+  padding: 10px 10px;
   /* -webkit-animation: slideInFromRight 1s ease-in 0s 1;
   animation: slideInFromRight 1s ease-in 0s 1; */
-}
-.temp-click {
-  cursor: pointer;
 }
 .temperature {
   margin-top: 0;
@@ -61,75 +51,3 @@ img {
   color: #C6D8FF;
 }
 /* 69DC9E */
-@media all and (min-width: 315px) {
-  .popup {
-    top: 3%;
-    left: -1%;
-  }
-  .popup .popuptext::after {
-    left:48%;
-  }
-}
-@media all and (min-width: 360px) {
-  .popup {
-    top: 5%;
-    left: -1%;
-  }
-  .popup .popuptext::after {
-    left:48%;
-  }
-}
-@media all and (min-width: 400px) {
-  .popup {
-    top: 6%;
-    left: -1%;
-  }
-  .popup .popuptext::after {
-    left:40%;
-  }
-}
-@media all and (min-width: 512px) {
-  .popup {
-    top: 3%;
-    left: -1%;
-  }
-  .popup .popuptext::after {
-    left:40%;
-  }
-}
-@media all and (min-width: 566px) {
-  .popup {
-    top: 6%;
-    left: -1%;
-  }
-  .popup .popuptext::after {
-    left:42%;
-  }
-}
-@media all and (min-width: 670px) {
-  .popup {
-    top: 3%;
-    left: -1%;
-  }
-  .popup .popuptext::after {
-    left:45%;
-  }
-}
-@media all and (min-width: 830px) {
-  .popup {
-    top: 6%;
-    left: -1%;
-  }
-  .popup .popuptext::after {
-    left:45%;
-  }
-}
-@media all and (min-width: 946px) {
-  .popup {
-    top: 3%;
-    left: -1%;
-  }
-  .popup .popuptext::after {
-    left:46%;
-  }
-}
