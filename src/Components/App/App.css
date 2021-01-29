@@ -26,7 +26,7 @@ main {
 /* Dont forget to change back to light theme preference */
 /* prefers-color-scheme: light */
 /* test with min-width: 500px */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   body {
     color: #121212;
     background-color:rgba(198,216,255, 0.4);
@@ -63,7 +63,7 @@ main {
   button, #submit {
     background-color: #FE9D5D;
   }
-}
+} */
 @media all and (min-width: 900px) {
   .opening {
     flex-direction: row;

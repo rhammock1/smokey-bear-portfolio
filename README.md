@@ -2,9 +2,6 @@
 
 https://smokeybear.dev
 
-Dark theme is default, but css media query has been added to check for light theme preference.
-If you click on the home temperature reading a popup will appear explaining how that data is gotten.
-
 
 
 ## Future update ideas:
