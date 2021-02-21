@@ -11,6 +11,7 @@ import SBCMain from './images/mainPageSS.png';
 import Context from '../../Context';
 import Projects from '../../Routes/Projects';
 import Contact from '../../Routes/Contact';
+import helpers from '../../helper-functions';
 import './App.css';
 
 class App extends React.Component {
@@ -57,12 +58,29 @@ class App extends React.Component {
       img: SBCMain,
       alt: 'SBC fundraising raffle app home page screen shot',
     },
+    {
+      title: `Sports Biz Cares Fundraising Raffle`,
+      host: 'https://sbc-fundraising-campaign.vercel.app',
+      clientRepo: 'https://github.com/rhammock1/sbc-random-raffler',
+      serverRepo: 'https://github.com/rhammock1/sbc-raffle-server',
+      description: 'Sports Biz Cares is 501(c)(3) non-profit, whose mission is to create career opportunities for individuals that are passionate about sports and currently underrepresented in the sports business. This is a simple PERN app that enables Sports Biz Cares to upload a csv file and spin a wheel to randomly choose a winner for their raffles. The winner is randomly chosen based on the number of entries each person has according to the csv file. ',
+      stack: 'JavaScript, React, Node.js, Express, PostgreSQL',
+      img: SBCMain,
+      alt: 'SBC fundraising raffle app home page screen shot',
+    },
     ],
     temperature: 0,
     error: null,
+    repos: [],
   }
 
   componentDidMount() {
+    helpers.getRepos()
+      .then((resJson) => {
+        console.log(resJson);
+        
+      })
+      .catch((error) => this.setState({ error }))
     const URL = 'https://guarded-journey-06260.herokuapp.com/temperature';
     fetch(URL)
       .then((res) => {
@@ -74,6 +92,8 @@ class App extends React.Component {
       .catch((error) => {
         this.setState({ error });
       })
+
+    
   }
 
   render() {

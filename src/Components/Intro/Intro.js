@@ -1,5 +1,5 @@
 import React from 'react';
-import { greeting } from '../../helper-functions';
+import helpers from '../../helper-functions';
 import FishLips from '../App/images/fishLips.PNG';
 import './Intro.css';
 import Context from '../../Context';
@@ -9,7 +9,7 @@ class Intro extends React.Component {
   static contextType = Context;
 
   render() {
-    const hello = greeting();
+    const hello = helpers.greeting();
     const { temp } = this.context;
     return (
       <div className="section-container">
