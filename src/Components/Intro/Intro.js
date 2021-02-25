@@ -27,7 +27,7 @@ class Intro extends React.Component {
                   begin recording data 
                   add graph data in with D3 
                   compare one day to the next */}
-                  <p className="temperature">This data is being gathered by an ESP8266 with a DHT11 temperature sensor. The 8266 is making a POST request with the data to my home server every 10 seconds</p>
+                  <p className="temperature">This data is being gathered by an ESP8266 with a DHT11 temperature sensor. The 8266 is making a POST request with the data to my home server every minute</p>
                 </div>
               </div>
           
