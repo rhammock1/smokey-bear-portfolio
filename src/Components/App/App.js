@@ -12,7 +12,6 @@ import hireLocal from './images/hireLocal.png';
 import Context from '../../Context';
 import Projects from '../../Routes/Projects';
 import Contact from '../../Routes/Contact';
-import helpers from '../../helper-functions';
 import './App.css';
 
 class App extends React.Component {
@@ -71,24 +70,20 @@ class App extends React.Component {
       },
     ],
     temperature: 0,
+    data: [],
     error: null,
     repos: [],
   }
 
   componentDidMount() {
-    helpers.getRepos()
-      .then((resJson) => {
-        console.log(resJson);
-        
-      })
-      .catch((error) => this.setState({ error }))
+    // Eventually add in github api 
     const URL = 'https://guarded-journey-06260.herokuapp.com/temperature';
     fetch(URL)
       .then((res) => {
         return res.json();
       })
       .then((resJson) => {
-        this.setState({ temperature: resJson.temperature });
+        this.setState({ temperature: resJson.temperature, data: resJson.data });
       })
       .catch((error) => {
         this.setState({ error });
@@ -101,6 +96,7 @@ class App extends React.Component {
     const value = {
       projects: this.state.projects,
       temp: this.state.temperature,
+      data: this.state.data
     }
     return (
       <Context.Provider value={value} >
