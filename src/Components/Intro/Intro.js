@@ -18,8 +18,8 @@ class Intro extends React.Component {
         </div>
         <h2>{hello}</h2>
         <div className="detail-container">
-          <p className='indent'>I am a Full Stack Developer, currently working for a small local food hub, called Freshlist. I have a background in Restaurants and Food Service.
-          I live in Charlotte, North Carolina.</p>
+          <p className='indent'>I am a Full Stack Developer, who is open to new opportunity. I am currently working a few hours a month for a small local food hub, called Freshlist. I have a background in Restaurants and Food Service and 
+          live in Charlotte, North Carolina.</p>
           <div className='temp'>
                 <p className='temperature'>It is currently <span className='emphasize temp-click' onClick={this.handleClick}>{temp}&#176;F</span> outside my home.</p>
                 <div className="popup">

@@ -23,47 +23,7 @@ main {
 .indent {
   text-indent: 20px;
 }
-/* Dont forget to change back to light theme preference */
-/* prefers-color-scheme: light */
-/* test with min-width: 500px */
-/* @media (prefers-color-scheme: light) {
-  body {
-    color: #121212;
-    background-color:rgba(198,216,255, 0.4);
-  }
-  input, textarea {
-    background-color: #efefef;
-  }
-  .big-container {
-    background-color: rgba(198,216,255, 0.3);
-  }
-  header {
-    background-color: #ADCFEB;
-  }
-  #nav-ul>li>a {
-    color: #215682;
-  }
-  
-  .detail-container {
-    background-color: rgba(198,216,255, 0.3);
-    box-shadow: 1px 3px 3px 2px #524D56;
-  }
-  img {
-    box-shadow: 1px 3px 2px #524D56;
-  }
-  .emphasize {
-    color: #FE9D5D;
-  }
-  h1,h2,h3,h4,.heading, a {
-    color: #215682;
-  }
-  .icon {
-    background-color: #efefef;
-  }
-  button, #submit {
-    background-color: #FE9D5D;
-  }
-} */
+
 @media all and (min-width: 900px) {
   .opening {
     flex-direction: row;

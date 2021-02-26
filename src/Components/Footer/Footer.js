@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = function() {
   return (
     <footer>
-      <p> &#169; RHammock</p>
+      <p> &#169; 2020 RHammock</p>
     </footer>
   )
 }

@@ -8,6 +8,7 @@ const ContactMe = function() {
       <div className='absolute'>
         <h3>Contact Me</h3>
         <div className = "detail-container">
+          
         <form id="form" action="https://formspree.io/f/mdopeerp" method="POST">
           <div className='form-group'>
             <label className = "label" htmlFor="_replyto">Your email: </label>
@@ -21,6 +22,7 @@ const ContactMe = function() {
           <button id="submit" 
           type="submit">Send</button>
         </form>
+        <p>You can reach me by filling out this form or directly emailing me <a href="mailto:rhamm1027@gmail.com">here</a></p>
         </div>
       
       <p id="contact">Please do not hesitate to reach out! I am happy to help however I can!</p>
