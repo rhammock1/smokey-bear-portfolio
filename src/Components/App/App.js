@@ -77,8 +77,12 @@ class App extends React.Component {
 
   componentDidMount() {
     // Eventually add in github api 
-    const URL = 'https://guarded-journey-06260.herokuapp.com/temperature';
-    fetch(URL)
+    const URL = 'http://99.61.89.58:2000/temperature';
+    fetch(URL, {
+      headers: {
+        clientkey: process.env.REACT_APP_API_KEY
+      }
+    })
       .then((res) => {
         return res.json();
       })
